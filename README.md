@@ -1,8 +1,16 @@
-# quarkus-and-microstream Project
+# quarkus-and-microstream
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+Template for testing the following combinations :
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+- [x] Java 17+
+- [x] Quarkus
+- [x] [MicroStream](https://github.com/microstream-one/microstream)
+- [x] Using Java `records` (see [`--add-exports java.base/jdk.internal.misc=ALL_UNNAMED`](https://docs.microstream.one/manual/storage/faq/java-features.html))
+- [x] Use JimFS for in-mem storage (to prevent `storage` folder to be stored on disk)
+- [x] Simple Qute based [HTML view](http://localhost:8080/pokedex) 
+
+## Notes about `storage` folder ...
+Without JimFS default will create a filesystem folder locally called `storage`, the contents of this must be deleted manually betweens runs.
 
 ## Running the application in dev mode
 

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Hello {name ?: "Qute"}</title>
+    <title>Pokedex</title>
     <style>
         body {
             background-color: #000;
@@ -23,8 +23,11 @@
     </style>
 </head>
 <body>
-<h1>Hello <b>{name ?: "Qute"}</b></h1>
-
-<p>Create your web page using Quarkus RESTEasy & Qute</p>
+<h1>Hello <b>Pokedex</b></h1>
+<ol>
+{#for p in pokemons}
+    <li>{p.name}</li>
+{/for}
+</ol>
 </body>
 </html>
